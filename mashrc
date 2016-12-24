@@ -1,0 +1,33 @@
+#	'Sendmail' => '/usr/bin/qmail-inject',
+
+%set=(
+	'Forge' => 'jman',
+	'From' => 'username@host.domain',
+	'Sendmail' => '/usr/lib/sendmail -ba -i -t',
+	'Sendmail' => '/ofb/bin/qmail-inject',
+	'Sent' => '/home/username/Mail/sent',
+	'Sort' => '-d',
+	'received' => '/home/username/Mail/received',
+    'MAILDIR' => '/home/username/Mail',
+
+);
+%aliases=(
+	'me' => 'username',
+
+);
+%cmd=(
+	'?' => 'help',
+	'b' => 'prev',
+	'd' => 'delete',
+	'fo' => 'folder',
+	'h' => 'headers',
+	'm' => 'mail',
+	'n' => 'next',
+	'p' => 'print',
+	'q' => 'quit',
+	'r' => 'reply',
+	's' => 'save',
+	'u' => 'undelete',
+	'x' => 'exit',
+
+);

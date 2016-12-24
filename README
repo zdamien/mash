@@ -1,0 +1,17 @@
+Mail client I wrote in the 1990s.  Needs some Perl libraries to
+function.  I'm not massively interested in getting it working again.
+
+*** 
+
+Mash, the Ampata release.
+
+Setup: I have the perl files in ~/src/mash, which a symlink from ~/bin/mash to
+~/src/mash/mash.pl, and a ~/.mashrc copied from mashrc.  mash can figure out
+where the rest of the required files live, so you can place the package
+elsewhere, but all the files do need to be together, unless you modify @INC.
+
+And you'll want to modify the obvious variables in .mashrc (possibly including
+Sendmail), plus search for 'damien' in the other files.  I don't have any
+installation procedure yet.
+
+mbox format is used, plus dot-locking, making it a natural with procmail.
